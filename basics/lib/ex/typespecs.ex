@@ -5,8 +5,14 @@ defmodule Person do
   """
   @type year :: integer
 
-  @spec current_age(year) :: integer
-  def current_age(year_of_birth), do: year_of_birth
-end
+  @type person :: %{
+          name: String.t(),
+          birth_year: year
+        }
 
-IO.puts(Person.current_age("hello"))
+  @doc """
+  Returns age of person based off year only.
+  """
+  @spec current_age(person, year) :: integer
+  def current_age(person, current_year), do: person.birth_year - current_year
+enkd
