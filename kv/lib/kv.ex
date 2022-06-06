@@ -1,6 +1,6 @@
-defmodule MixAndOtp do
+defmodule KV do
   @moduledoc """
-  Documentation for `MixAndOtp`.
+  Documentation for `KV`.
   """
 
   @doc """
@@ -8,7 +8,7 @@ defmodule MixAndOtp do
 
   ## Examples
 
-      iex> MixAndOtp.hello()
+      iex> KV.hello()
       :world
 
   """
